@@ -1,0 +1,47 @@
+
+# Base widget from Rootwidget class in .py file
+<RootWidget>:
+ 
+    # used to change the label text
+    # as in rootwidget class
+    lbl:my_label
+    lbl2: my_label2
+ 
+    # child that is an instance of the BoxLayout
+    RelativeLayout:
+ 
+        Button:
+            text:'Status Mjeseca'
+            font_size:"20sp"
+            color: [0, 255, 255, .67]
+            on_press: root.btn_clk()
+            size_hint: .3,.1
+            pos_hint: {"x":0.35, "y":0.63} 
+            #background_color: .17,.33,.58,1
+    
+        Label:
+            # id is limited in scope to the rule
+            # it is declared in. An id is a weakref
+            # to the widget and not the widget itself.
+            id: my_label
+            text: ''
+            color: [0, 84, 80, 19]
+            pos_hint: {"x":0, "y":0.075} 
+
+        Button:
+            text:'Status Sunca'
+            font_size:"20sp"
+            color: [0, 255, 255, .67]
+            on_press: root.btn2_clk()
+            size_hint: .3,.1
+            pos_hint: {"x":0.35, "y":0.39} 
+            #background_color: .17,.33,.58,1
+    
+        Label:
+            # id is limited in scope to the rule
+            # it is declared in. An id is a weakref
+            # to the widget and not the widget itself.
+            id: my_label2
+            text: ''
+            color: [0, 84, 80, 19]
+            pos_hint: {"x":0.01, "y":-0.23} 
