@@ -87,7 +87,7 @@ def sun():
             data = 'Velika brzina'
         elif int(spd_val) > 900:
             data = 'Jako velika brzina'
-        status = f"          Trenutna vrijednost: {curr_val}            {check(curr_val)}\n          2h maks.: {max2_val}                             {check(max2_val)}\n          24h maks.: {max24_val}                           {check(max24_val)}\n          Sunčev vjetar: {spd_val} km/sec         {data}"
+        status = f"          Trenutna vrijednost: {curr_val}            {check(curr_val)}\n          2h maks.: {max2_val}                             {check(max2_val)}\n          24h maks.: {max24_val}                             {check(max24_val)}\n          Sunčev vjetar: {spd_val} km/sec         {data}"
         # \n\n\nA & B = Quiet                     < 400 = Normalna brzina\nC = Mala baklja                 500 > = Srednje velika brzina\nM = Snažna baklja             700 > = Velika brzina\nX = Ogromna baklja           900 > = Jako velika brzina\n
         return status
 
