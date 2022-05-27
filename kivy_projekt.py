@@ -72,11 +72,11 @@ def sun():
         def check(value):
             if 'A' in value or 'B' in value:
                 return 'Tiho'
-            if 'C' in value:
+            elif 'C' in value:
                 return 'Mala baklja'
-            if 'M' in value:
+            elif 'M' in value:
                 return 'Snažna baklja '
-            if 'X' in value:
+            elif 'X' in value:
                 return 'Ogromna baklja'
         data = ''
         if int(spd_val) < 450:
